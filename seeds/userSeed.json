@@ -1,0 +1,14 @@
+[
+    {
+        "user_name": "Jake",
+        "email": "jakerusmith@gmail.com",
+        "password": "nice try",
+        "avatar": null
+    },
+    {
+        "user_name": "John",
+        "email": "johnnyD@gmail.com",
+        "password": "thisismyrealpassword",
+        "avatar": null
+    }
+]

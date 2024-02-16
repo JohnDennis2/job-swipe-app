@@ -1,0 +1,134 @@
+<main class="container container-fluid d-flex align-items-center justify-content-center vh-100">
+    
+    <button id="save-job-btn" class="swipe-btn btn btn-info border border-5 rounded-pill position-absolute end-0 z-1" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+        </svg>
+    </button>
+
+    <button id="deny-job-btn" class="swipe-btn btn btn-dark border border-5  rounded-pill position-absolute start-0 z-1" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+        </svg>
+    </button>
+
+    {{#each jobs as |jobCard|}}
+        <section class="position-absolute">
+            <div class="card swipe-card border border-3 border-info-subtle">
+                <div class="card-body">
+                    <h3 class="card-title">{{jobCard.title}}</h3>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{jobCard.location}}</h6>
+                    <p class="card-text">{{jobCard.description}}</p>
+                </div>
+            </div>
+        </section>
+    {{/each}}
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 1</h3>
+                <h4 class="card-subtitle mb-2 text-body-secondary">Job Subtitle</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+                <h4 class="card-subtitle mt-2 fw-bold text-body-secondary">40000-60000</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -2s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 2</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -4s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 3</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -6s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 4</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -2s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 5</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -2s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 6</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -2s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 7</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -2s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 8</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -2s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 9</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-absolute">
+        <div class="card swipe-card border border-3 border-info-subtle" style="animation-delay: -2s;">
+            <div class="card-body">
+                <h3 class="card-title">Job Title 10</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere totam perferendis odio fugit beatae quam minus nobis! Aliquam impedit ut eius magni eligendi placeat laborum illum, necessitatibus delectus voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="fixed-bottom bg-dark d-flex justify-content-around" style="height: 50px">
+    <ul class="nav">
+        <li class="nav-item flex-fill">
+            <a class="nav-link active text-light fs-4 px-4 mx-4" aria-current="page" href="./profile.html">Profile</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link text-light fs-4 text-end px-4 mx-4" href="#">Saved Jobs</a>
+            </li>
+    </ul>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+<script src="./js/homepage.js"></script>

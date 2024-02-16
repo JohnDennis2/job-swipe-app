@@ -1,0 +1,110 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+#signCard {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #0fdee6,
+        0 0 0.8rem #0fdee6,
+        0 0 2.8rem #0fdee6,
+        inset 0 0 1.3rem #0fdee6;
+}
+
+.page-title {
+    text-shadow:
+        0 0 7px #0fdee6,
+        0 0 10px #0fdee6,
+        0 0 21px #0fdee6;
+}
+
+.nav-link {
+    text-shadow:
+        0 0 7px #0fdee6,
+        0 0 10px #0fdee6,
+        0 0 21px #0fdee6;
+}
+
+ul>img {
+    height: 80px;
+    width: 160px;
+}
+.card-saved {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #0fdee6,
+        0 0 0.8rem #0fdee6,
+        0 0 2.8rem #0fdee6,
+        inset 0 0 1.3rem #0fdee6;
+        width: calc(33.33% - 20px); /* Set width for each card, accounting for margins */
+    margin: 10px; /* Add some margin between cards */
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align items horizontally in the center */
+  }
+  
+
+  
+
+.swipe-card {
+    width: 20rem;
+    height: 24rem;
+    z-index: -3;
+    opacity: 0;
+    /* animation-name: stack-card;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; */
+}
+
+.swipe-btn {
+    width: 4rem;
+    height: 10rem;
+    margin-right: 16rem;
+    margin-left: 16rem;
+}
+
+/* TEMPORARY ANIMATION FOR PROOF OF CONCEPT */
+@keyframes stack-card {
+    0%   {bottom: 3rem; z-index: -3;}
+    25%  {bottom: 2rem; z-index: -2;}
+    50%  {bottom: 1rem; z-index: -1;}
+    75%  {bottom: 0rem; z-index: 0; right: 0rem}
+    85%  {right: 25rem; z-index: 0;}
+    86%  {z-index: -3;}
+    100% {bottom: 3rem; right: 0rem; z-index: -3;}
+}
+
+@media (min-height: 576px) and (max-width: 992px) {
+    .swipe-btn {
+        width: 6rem;
+        height: 3rem;
+        top: 34rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    
+}
+
+@media (min-height: 768px) and (max-width: 992px) {
+    .swipe-btn {
+        width: 8rem;
+        height: 4rem;
+        top: 44rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .swipe-btn {
+        margin-right: 10rem;
+        margin-left: 10rem;
+    }
+}
